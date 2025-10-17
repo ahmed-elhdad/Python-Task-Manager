@@ -5,4 +5,4 @@ def convert_from_json(path):
                 data_converted=json.loads(f.read())
                 return data_converted
     except Exception as e:
-            return "nothing to convert"
+            return "nothing to convert: ",e

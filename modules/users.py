@@ -32,7 +32,9 @@ class Users:
         users=list(converted_from_json)
         users.append(new_user.__dict__)
         create_file(name,'json')
-        write_text(f'data/fdfdfds.json','w',new_user.__dict__)
+        from modules.user import User
+        user=User(id,name,[])
+        write_text(f'data/{name}.json','w',user.__dict__)
         empty_file('data/users.json')
         if len(users) > 1:
             write_text('data/users.json','w',users)
