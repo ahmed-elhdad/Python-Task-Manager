@@ -14,7 +14,6 @@ class Users:
     def add_user():
         convert_from_json('data/users.json')
         id=generate_user_id(10)
-        print(id)
         name=input('Enter your name: \n')
         password=input('Enter your password: \n')
         while name=='' or password=='':
@@ -32,12 +31,10 @@ class Users:
             return
         users=list(converted_from_json)
         users.append(new_user.__dict__)
+        create_file(name,'json')
+        write_text(f'data/fdfdfds.json','w',new_user.__dict__)
         empty_file('data/users.json')
         if len(users) > 1:
             write_text('data/users.json','w',users)
-            create_file(name,'json')
         else:
             write_text('data/users.json','w',users)
-            create_file(name,'json')
-            print(new_user)
-            write_text(f'data/fdfdfds.json','w',new_user.__dict__)

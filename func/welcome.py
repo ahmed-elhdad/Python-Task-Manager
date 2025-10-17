@@ -1,5 +1,6 @@
 import os
 from modules.users import Users
+from modules.tasks import Task
 def welcome():
     print("""
 1- Press 1 to create account or login.
@@ -13,3 +14,4 @@ def welcome():
     while enter is None:
         print('Enter Num: \n')
     if enter==1:Users.add_user()
+    if enter==2:Task.show_tasks()
