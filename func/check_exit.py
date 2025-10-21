@@ -1,4 +1,4 @@
-from library.func.genererate_user_id import generate_user_id
+from func.genererate_user_id import generate_user_id
 from func.convert_from_json import convert_from_json
 def check_exit_user(name,id):
     converted_data=convert_from_json('data/users.json')

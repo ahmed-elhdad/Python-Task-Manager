@@ -1,5 +1,5 @@
 from func.check_exit import check_exit_user
-from func.getnererate_user_id import generate_user_id
+from func.genererate_user_id import generate_user_id
 from func.get_data import users
 from func.empty_file import empty_file
 from func.write_text import write_text

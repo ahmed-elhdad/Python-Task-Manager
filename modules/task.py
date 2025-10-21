@@ -1,7 +1,7 @@
 
 from modules.user import User
 from func.convert_from_json import convert_from_json
-from func.getnererate_user_id import generate_user_id
+from func.genererate_user_id import generate_user_id
 from modules.user import User
 import datetime
 
